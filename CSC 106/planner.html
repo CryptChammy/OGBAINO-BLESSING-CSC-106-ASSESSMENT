@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner | Blessing Ogbaino</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="index.html">BO<span>.</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ■
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container page-main">
+      <section class="page-intro">
+        <p class="eyebrow">STAY ORGANIZED</p>
+        <h1>Academic <span>Planner</span></h1>
+        <p>My academic activities.</p>
+      </section>
+      <section class="planner-layout">
+        <div class="planner-panel">
+          <h2>Add a new task</h2>
+          <form id="task-form" class="task-form">
+            <label for="task-input">Task description</label>
+            <input
+              id="task-input"
+              name="task"
+              type="text"
+              placeholder="e.g. Complete COS 106 assignment"
+              maxlength="120"
+              required
+            />
+            <div class="form-row">
+              <div>
+                <label for="task-date">Due date</label
+                ><input id="task-date" name="dueDate" type="date" />
+              </div>
+              <div>
+                <label for="task-category">Category</label
+                ><select id="task-category" name="category">
+                  <option>Assignment</option>
+                  <option>Reading</option>
+                  <option>Revision</option>
+                  <option>Project</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn" type="submit">+ Add task</button>
+            <p id="task-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="planner-panel">
+          <div class="planner-title-row">
+            <div>
+              <h2>My tasks</h2>
+              <p class="muted">My tasks are saved in this browser.</p>
+            </div>
+            <span class="task-count" id="task-count">0 tasks</span>
+          </div>
+          <div class="task-filters" role="group" aria-label="Filter tasks">
+            <button class="filter-btn selected" type="button" data-filter="all">
+              All
+            </button>
+            <button class="filter-btn" type="button" data-filter="active">
+              Pending
+            </button>
+            <button class="filter-btn" type="button" data-filter="completed">
+              Completed
+            </button>
+          </div>
+          <ul id="task-list" class="task-list" aria-live="polite">
+            <li class="empty-state">No tasks yet.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Weekly study timetable</h2>
+        <p class="muted"></p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Monday</th>
+                <td>Review lecture notes</td>
+                <td>Attend classes</td>
+                <td>Practice HTML/CSS</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>Read course materials</td>
+                <td>Assignment work</td>
+                <td>Cybersecurity study</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>Revision</td>
+                <td>Attend classes</td>
+                <td>JavaScript practice</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>Research</td>
+                <td>Project work</td>
+                <td>Review notes</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>Complete tasks</td>
+                <td>Group discussion</td>
+                <td>Weekly review</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          © <span class="current-year"></span> Blessing Ogbaino. All rights
+          reserved.
+        </p>
+        <p>Built with HTML, CSS and JavaScript</p>
+      </div>
+    </footer>
+  </body>
+</html>

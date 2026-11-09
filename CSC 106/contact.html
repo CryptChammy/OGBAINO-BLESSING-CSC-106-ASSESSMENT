@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Blessing Ogbaino</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="index.html">BO<span>.</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ■
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container page-main">
+      <section class="page-intro">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h1>Contact <span>Me</span></h1>
+        <p>
+          Have a question or want to share an opportunity? Send a message using
+          the form below.
+        </p>
+      </section>
+      <section class="contact-layout">
+        <div class="contact-copy">
+          <h2>Get in touch</h2>
+          <p>
+            I welcome thoughtful conversations about 9oooootm, technology,
+            collaboration and professional development.
+          </p>
+          <div class="contact-detail">
+            <span>✉</span>
+            <div>
+              <strong>
+                <a href="mailto:b.ogbaino4003@miva.edu.ng"
+                  >b.ogbaino4003@miva.edu.ng</a
+                >
+              </strong>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span>■</span>
+            <div>
+              <strong>Location</strong>
+              <p>Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="contact-name">Full name</label
+            ><input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="Enter
+ your name"
+              required
+            /><small class="error-message" id="name-error"></small>
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email address</label
+            ><input
+              type="email"
+              id="contact-email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            /><small class="error-message" id="email-error"></small>
+          </div>
+          <div class="form-field">
+            <label for="contact-phone">Phone number</label
+            ><input
+              type="tel"
+              id="contact-phone"
+              name="phone"
+              placeholder="Digits only"
+              inputmode="numeric"
+              required
+            /><small class="error-message" id="phone-error"></small>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Message</label
+            ><textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea
+            ><small class="error-message" id="message-error"></small>
+          </div>
+          <button class="btn" type="submit">Validate message</button>
+          <p id="contact-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          © <span class="current-year"></span> Blessing Ogbaino. All rights
+          reserved.
+        </p>
+        <p>Built with HTML, CSS and JavaScript.</p>
+      </div>
+    </footer>
+  </body>
+</html>
